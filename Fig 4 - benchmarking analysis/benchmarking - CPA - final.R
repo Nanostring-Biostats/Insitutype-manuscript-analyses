@@ -506,7 +506,7 @@ ggplot(ARI.summary_hvg, aes(x = Method, y = ARI, fill = Method))+
   theme(axis.text.x = element_text(angle = 45, vjust = 1, hjust=1))
 
 #### supervised cell typing -----------------------
-alpha_ref = read_csv("A1182_S1_CellMatrix.csv")
+alpha_ref = read_csv("../data/A1182_S1_CellMatrix.csv")
 alpha_ref = alpha_ref[,]
 alpha_ref %>%
   select(-`...1`) %>%
